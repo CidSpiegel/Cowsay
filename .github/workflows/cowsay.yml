@@ -3,17 +3,17 @@
 name: Cowsay Workflow
 
 on:
-    push:
-        branches:
-            - main
+  push:
+      branches:
+          - main
     
 jobs:
-    cowsay-job:
-        runs-on: ubuntu-latest
-    
+  cowsay-job:
+    runs-on: ubuntu-latest
+
     steps:
-        - name: Cowsay Hello
+      - name: Cowsay Hello
         run:
             sudo apt-get update
             sudo apt-get install -y cowsay
-            cowsay "Hello from Github Actions"
+            cowsay "Hello from Github Actions II"
